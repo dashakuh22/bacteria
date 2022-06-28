@@ -1,5 +1,7 @@
 <?php
 
+require_once realpath('vendor/autoload.php');
+
 $count_red = '';
 $count_green = '';
 $count_rounds = '';

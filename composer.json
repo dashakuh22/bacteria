@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/bacteria",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "dasha",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "ext-gmp": "*"
+  }
+}
