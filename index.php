@@ -34,6 +34,16 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 
     } else $error = "Fill in all the fields!";
 }
+
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+    $url = "https://";
+else
+    $url = "http://";
+
+$url.= $_SERVER['HTTP_HOST'];
+
+$url.= $_SERVER['REQUEST_URI'];
+
 ?>
 
 <!DOCTYPE html>
@@ -71,7 +81,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
                 <div class="tab-content tabs">
                     <div role="tabpanel" class="tab-pane fade in active" id="Section1">
-                        <form class="form-horizontal" method="POST">
+                        <form class="form-horizontal" method="POST" action="<?=$url?>">
                             <div class="form-group">
                                 <label>Count of red bacteria</label>
                                 <input type="number" min="0" class="form-control" name="count-red" required
