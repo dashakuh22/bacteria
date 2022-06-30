@@ -67,7 +67,7 @@ $url.= $_SERVER['REQUEST_URI'];
     </h2>
     <ul>
         <li>1 <span class="red">red</span> bacteria produces<br>
-            3 <span class="red">red</span> and 4 <span class="green">green</span>
+            4 <span class="red">red</span> and 3 <span class="green">green</span>
         </li>
         <li>1 <span class="green">green</span> bacteria produces<br>
             2 <span class="red">red</span> and 5 <span class="green">green</span>
